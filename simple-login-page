@@ -1,1 +1,41 @@
-
+<!--Write an Html code with javascript for login page 
+if username and password is blank , 
+ alert some message else 
+ print the value of username and password.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hawa{
+            margin-top: 100px ;
+            margin-left: 100px;
+        }
+    </style>
+    <script>
+        function getdata(){
+            let user=document.forms["0"]["user"];
+            let pass=document.forms["0"]["pass"];
+            if (user.value == "" || pass.value=="" ){
+                alert ("enter username and passowrd");
+            }
+            else{
+                document.getElementById("user");
+                document.getElementById("pass");
+            }
+        }
+    </script>
+</head>
+<body style="background-color: aqua; font-size: 20px;">
+    <form id="hawa" name="0" onsubmit="getdata()">
+        Login Page<br>
+        <input type="text" id="user" placeholder="enter user name"><br>
+        <input type="password" id="pass"  placeholder="enter your password"><br>
+        <button type="submit">login</button>&nbsp&nbsp&nbsp
+        <button type="reset">clear</button>
+    </form>
+    
+</body>
+</html>
